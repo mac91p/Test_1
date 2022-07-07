@@ -7,14 +7,11 @@ public class OsobaSerivce {
 
     private Osoba[] osoby;
 
-    public OsobaSerivce() {
-    }
-
     public OsobaSerivce(int n) {
         this.osoby = new Osoba[n];
     }
 
-    public void getSexFromPesel(Osoba[] inputArray, String sex) {
+    public Osoba [] getSexFromPesel(Osoba[] inputArray, String sex) {
         int cnt = 0;
         Osoba[] tmpf = new Osoba[inputArray.length];
         Osoba[] tmpm = new Osoba[inputArray.length];
@@ -24,9 +21,9 @@ public class OsobaSerivce {
                 tmpf[cnt++] = inputArray[i];
             } else tmpm[cnt++] = inputArray[i];
         }
-        if (sex == "FEMALE")
-            System.out.println(Arrays.toString(tmpf));
-        else System.out.println(Arrays.toString(tmpm));
+        if (sex.equals("FEMALE"))
+            return tmpf;
+        else return tmpm;
     }
 }
 

@@ -5,6 +5,6 @@ public class Runner {
 
 
         Hourglass klepsydra = new Hourglass();
-        klepsydra.narysujKlepsydre(9);
+        klepsydra.narysujKlepsydre(15);
     }
 }

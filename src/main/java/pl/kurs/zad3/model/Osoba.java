@@ -6,8 +6,6 @@ public class Osoba {
     private String nazwisko;
     private String pesel;
 
-    public Osoba() {
-    }
 
     public Osoba(String imie, String nazwisko, String pesel) {
         this.imie = imie;

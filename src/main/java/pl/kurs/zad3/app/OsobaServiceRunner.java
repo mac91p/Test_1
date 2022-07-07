@@ -23,8 +23,9 @@ public class OsobaServiceRunner {
         }
         System.out.println(Arrays.toString(osoby));
 
-        OsobaSerivce osobaSerivce = new OsobaSerivce();
-        osobaSerivce.getSexFromPesel(osoby,"FEMALE");
+        OsobaSerivce osobaSerivce = new OsobaSerivce(3);
+        osobaSerivce.getSexFromPesel(osoby,"MALE");
+        System.out.println(Arrays.toString(osobaSerivce.getSexFromPesel(osoby,"Male")));
 
 
 

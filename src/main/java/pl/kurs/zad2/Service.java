@@ -30,12 +30,12 @@ public class Service {
     }
 
 
-    public String result(int[] array, String operator) {
+    public int result(int[] array, String operator) {
         return switch (operator) {
-            case "MAX" -> "Maksimum: "+ max(array);
-            case "MIN" -> "Minimum: " + min(array);
-            case "SUM" -> "Suma: " + sum(array);
-            default -> "Błędny operator.";
+            case "MAX" -> max(array);
+            case "MIN" -> min(array);
+            case "SUM" -> sum(array);
+            default -> 0;
         };
     }
 }
